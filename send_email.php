@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Directory Info: $directory\n
     ";
 
-    $headers = "From: no-reply@yourdomain.com";
+    $headers = "From: https://jerrys-project.vercel.app/";
 
     if (mail($to, $subject, $message, $headers)) {
         echo "Email sent successfully!";
